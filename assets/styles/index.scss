@@ -1,2 +1,15 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+.garbage {
+  color: white;
+}
+
+#logo {
+  text-align: center;
+}
+
+#logo-msg {
+  text-align: center;
+  font-style: italic;
+}

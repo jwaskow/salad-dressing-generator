@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Salad Dressing Generator</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags unless you know what you are doing -->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="./assets/styles/index.scss">
 
       <!-- Do not add `script` tags unless you know what you are doing -->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body class="container-fluid">
-      <h1>Example</h1>
+      <h1 id="logo">Salad Dressing Generator</h1>
+      <h3 id="logo-msg">Don't fret over your vinaigrette!</h3>
+    </br>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
+      <form>
+        <fieldset>
+          <legend>Choose a Vinegar</legend>
+          <input type="radio" name="vinegar" value="apple-cider"> Apple Cider
+          <input type="radio" name="vinegar" value="balsamic"> Balsamic
+          <input type="radio" name="vinegar" value="champagne"> Champagne
+          <input type="radio" name="vinegar" value="red-wine"> Red Wine
+          <input type="radio" name="vinegar" value="sherry"> Sherry
+          <input type="radio" name="vinegar" value="white-wine"> White Wine
+        </fieldset>
+      </br>
+        <fieldset>
+          <legend>Choose an Oil</legend>
+          <input type="radio" name="oil" value="canola"> Canola
+          <input type="radio" name="oil" value="evoo"> Extra Virgin Olive Oil
+          <input type="radio" name="oil" value="olive"> Olive Oil
+          <input type="radio" name="oil" value="soybean"> Soybean
+          <input type="radio" name="vinegar" value="vegetable"> Vegetable
+        </fieldset>
+        </br>
+        <fieldset>
+          <legend>Choose Aromatics (2-4)</legend>
+          <input type="checkbox" name="aromatic" value="shallot"> Shallots
+          <input type="checkbox" name="aromatic" value="garlic"> Garlic
+          <input type="checkbox" name="aromatic" value="parsley"> Parsley
+          <input type="checkbox" name="aromatic" value="basil"> Basil
+          <input type="checkbox" name="aromatic" value="oregano"> Oregano
+          <input type="checkbox" name="aromatic" value="honey"> Honey
+          <input type="checkbox" name="aromatic" value="lemon-juice"> Lemon Juice
+          <input type="checkbox" name="aromatic" value="raspberries"> Raspberries
+          <input type="checkbox" name="aromatic" value="cherries"> Cherries
+        </fieldset>
+      </form>
+
+
     </body>
 </html>
