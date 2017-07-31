@@ -15,40 +15,45 @@
       <h3 id="logo-msg">Don't fret over your vinaigrette!</h3>
     </br>
 
-      <form>
-        <fieldset>
+      <form id="ingredient-form">
+        <fieldset class="fieldset">
           <legend>Choose a Vinegar</legend>
-          <input type="radio" name="vinegar" value="apple-cider"> Apple Cider
-          <input type="radio" name="vinegar" value="balsamic"> Balsamic
-          <input type="radio" name="vinegar" value="champagne"> Champagne
-          <input type="radio" name="vinegar" value="red-wine"> Red Wine
-          <input type="radio" name="vinegar" value="sherry"> Sherry
-          <input type="radio" name="vinegar" value="white-wine"> White Wine
+          <label><input type="radio" name="vinegar" value="Apple Cider"> Apple Cider</label>
+          <label><input type="radio" name="vinegar" value="Balsamic"> Balsamic</label>
+          <label><input type="radio" name="vinegar" value="Champagne"> Champagne</label>
+          <label><input type="radio" name="vinegar" value="Red Wine"> Red Wine</label>
+          <label><input type="radio" name="vinegar" value="Sherry"> Sherry</label>
+          <label><input type="radio" name="vinegar" value="White Wine"> White Wine</label>
         </fieldset>
       </br>
-        <fieldset>
+        <fieldset class="fieldset">
           <legend>Choose an Oil</legend>
-          <input type="radio" name="oil" value="canola"> Canola
-          <input type="radio" name="oil" value="evoo"> Extra Virgin Olive Oil
-          <input type="radio" name="oil" value="olive"> Olive Oil
-          <input type="radio" name="oil" value="soybean"> Soybean
-          <input type="radio" name="vinegar" value="vegetable"> Vegetable
+          <label><input type="radio" name="oil" value="Canola"> Canola</label>
+          <label><input type="radio" name="oil" value="Extra Virgin Olive"> Extra Virgin Olive</label>
+          <label><input type="radio" name="oil" value="Olive"> Olive</label>
+          <label><input type="radio" name="oil" value="Soybean"> Soybean</label>
+          <label><input type="radio" name="oil" value="Vegetable"> Vegetable</label>
         </fieldset>
         </br>
-        <fieldset>
+        <fieldset class="fieldset">
           <legend>Choose Aromatics (2-4)</legend>
-          <input type="checkbox" name="aromatic" value="shallot"> Shallots
-          <input type="checkbox" name="aromatic" value="garlic"> Garlic
-          <input type="checkbox" name="aromatic" value="parsley"> Parsley
-          <input type="checkbox" name="aromatic" value="basil"> Basil
-          <input type="checkbox" name="aromatic" value="oregano"> Oregano
-          <input type="checkbox" name="aromatic" value="honey"> Honey
-          <input type="checkbox" name="aromatic" value="lemon-juice"> Lemon Juice
-          <input type="checkbox" name="aromatic" value="raspberries"> Raspberries
-          <input type="checkbox" name="aromatic" value="cherries"> Cherries
+          <label><input type="checkbox" name="aromatic" value="shallot"> Shallots</label>
+          <label><input type="checkbox" name="aromatic" value="garlic"> Garlic</label>
+          <label><input type="checkbox" name="aromatic" value="parsley"> Parsley</label>
+          <label><input type="checkbox" name="aromatic" value="basil"> Basil</label>
+          <label><input type="checkbox" name="aromatic" value="oregano"> Oregano</label>
+          <label><input type="checkbox" name="aromatic" value="honey"> Honey</label>
+          <label><input type="checkbox" name="aromatic" value="lemon juice"> Lemon Juice</label>
+          <label><input type="checkbox" name="aromatic" value="raspberries"> Raspberries</label>
+          <label><input type="checkbox" name="aromatic" value="cherries"> Cherries</label>
         </fieldset>
-        <button id="myButton">click</button>
+        </br>
+        <button id="myButton">Make My Recipe!</button>
       </form>
+      </br>
+
+      <div id="recipeBox">
+      </div>
 
 
     </body>

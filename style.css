@@ -6,3 +6,15 @@
   text-align: center;
   font-style: italic;
 }
+
+#ingredient-form {
+  text-align: center;
+}
+
+input {
+  margin: 0 10px;
+}
+
+#recipeBox {
+  font-size: 18px;
+}
