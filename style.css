@@ -18,3 +18,27 @@ input {
 #recipeBox {
   font-size: 18px;
 }
+
+html {
+    min-height: 100%
+}
+
+#vinContainer {
+  float: right;
+}
+
+#vinColor {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+#vinName {
+  clear: both;
+  margin: 10px 0 0 0;
+}
+
+.vinLabel {
+  padding: 15px;
+}

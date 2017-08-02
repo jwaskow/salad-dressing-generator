@@ -18,12 +18,16 @@
       <form id="ingredient-form">
         <fieldset class="fieldset">
           <legend>Choose a Vinegar</legend>
-          <label><input type="radio" name="vinegar" value="Apple Cider"> Apple Cider</label>
-          <label><input type="radio" name="vinegar" value="Balsamic"> Balsamic</label>
-          <label><input type="radio" name="vinegar" value="Champagne"> Champagne</label>
-          <label><input type="radio" name="vinegar" value="Red Wine"> Red Wine</label>
-          <label><input type="radio" name="vinegar" value="Sherry"> Sherry</label>
-          <label><input type="radio" name="vinegar" value="White Wine"> White Wine</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#ce9c00" value="Apple Cider"> Apple Cider</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#250630" value="Balsamic"> Balsamic</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#f4e7ab" value="Champagne"> Champagne</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#990928" value="Red Wine"> Red Wine</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#704a19" value="Sherry"> Sherry</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#fffac9" value="White Wine"> White Wine</label>
+          <div id="vinContainer">
+          <div id="vinColor"></div>
+          <div id="vinName"></div>
+          </div>
         </fieldset>
       </br>
         <fieldset class="fieldset">
