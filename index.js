@@ -28,14 +28,23 @@ function total (e) {
   While blending, start very slowly pouring the ' + checkedOil + ' oil into the mixture.  Once a stable emulsion forms, slightly increase the speed of pouring the ' + checkedOil + ' oil.  \
   When all of the oil is blended, season to taste with salt and pepper and mix.  Vinaigrette will hold its emulsion for about 2 weeks.')
 }
+
 function vinColorDisplay () {
-  $("#vinColor").css("background", $("input:checked").attr('data-color'))
-  $("#vinColor").css("box-shadow", "2px 2px 5px 5px " + $("input:checked").attr('data-color'))
-  $("#vinName").html($("input:checked").val())
+  $("#vinColor").css("background", $("input[name=vinegar]:checked").attr('data-vinColor'))
+  $("#vinColor").css("box-shadow", "2px 2px 5px 5px " + $("input[name=vinegar]:checked").attr('data-vinColor'))
+  $("#vinName").html($("input[name=vinegar]:checked").val())
+}
+
+function oilColorDisplay () {
+  $("#oilColor").css("background", $("input[name=oil]:checked").attr('data-oilColor'))
+  $("#oilColor").css("box-shadow", "2px 2px 5px 5px " + $("input[name=oil]:checked").attr('data-oilColor'))
+  $("#oilName").html($("input[name=oil]:checked").val())
 }
 
 $(() => {
   $('#myButton').on('click', total)
   $(".vinegar").on("click", vinColorDisplay)
   $('.vinegar').hide()
+  $(".oil").on("click", oilColorDisplay)
+  $('.oil').hide()
 })

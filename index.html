@@ -18,12 +18,12 @@
       <form id="ingredient-form">
         <fieldset class="fieldset">
           <legend>Choose a Vinegar</legend>
-          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#ce9c00" value="Apple Cider"> Apple Cider</label>
-          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#250630" value="Balsamic"> Balsamic</label>
-          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#f4e7ab" value="Champagne"> Champagne</label>
-          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#990928" value="Red Wine"> Red Wine</label>
-          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#704a19" value="Sherry"> Sherry</label>
-          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-color="#fffac9" value="White Wine"> White Wine</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#ce9c00" value="Apple Cider"> Apple Cider</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#250630" value="Balsamic"> Balsamic</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#f4e7ab" value="Champagne"> Champagne</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#990928" value="Red Wine"> Red Wine</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#704a19" value="Sherry"> Sherry</label>
+          <label class="vinLabel"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#fffac9" value="White Wine"> White Wine</label>
           <div id="vinContainer">
           <div id="vinColor"></div>
           <div id="vinName"></div>
@@ -32,11 +32,15 @@
       </br>
         <fieldset class="fieldset">
           <legend>Choose an Oil</legend>
-          <label><input type="radio" name="oil" value="Canola"> Canola</label>
-          <label><input type="radio" name="oil" value="Extra Virgin Olive"> Extra Virgin Olive</label>
-          <label><input type="radio" name="oil" value="Olive"> Olive</label>
-          <label><input type="radio" name="oil" value="Soybean"> Soybean</label>
-          <label><input type="radio" name="oil" value="Vegetable"> Vegetable</label>
+          <label class="oilLabel"><input type="radio" name="oil" class="oil" data-oilColor="#f7f5b4" value="Canola"> Canola</label>
+          <label class="oilLabel"><input type="radio" name="oil" class="oil" data-oilColor="#97a33c" value="Extra Virgin Olive"> Extra Virgin Olive</label>
+          <label class="oilLabel"><input type="radio" name="oil" class="oil" data-oilColor="#c4c44e" value="Olive"> Olive</label>
+          <label class="oilLabel"><input type="radio" name="oil" class="oil" data-oilColor="#eae98c" value="Soybean"> Soybean</label>
+          <label class="oilLabel"><input type="radio" name="oil" class="oil" data-oilColor="#fcfbc4" value="Vegetable"> Vegetable</label>
+          <div id="oilContainer">
+          <div id="oilColor"></div>
+          <div id="oilName"></div>
+          </div>
         </fieldset>
         </br>
         <fieldset class="fieldset">

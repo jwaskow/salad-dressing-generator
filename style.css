@@ -28,8 +28,8 @@ html {
 }
 
 #vinColor {
-  height: 100px;
-  width: 100px;
+  height: 85px;
+  width: 85px;
   margin: 0 auto;
   border-radius: 50px;
 }
@@ -39,6 +39,28 @@ html {
   margin: 10px 0 0 0;
 }
 
+#oilContainer {
+  float: right;
+}
+
+#oilColor {
+  height: 85px;
+  width: 85px;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+#oilName {
+  clear: both;
+  margin: 10px 0 0 0;
+}
+
 .vinLabel {
   padding: 15px;
+  float: left;
+}
+
+.oilLabel {
+  padding: 15px;
+  float: left;
 }
