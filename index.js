@@ -26,13 +26,13 @@ function generate (e) {
 
 function vinColorDisplay () {
   $("#vinColor").css("background", $("input[name=vinegar]:checked").attr('data-vinColor'))
-  $("#vinColor").css("box-shadow", "2px 2px 5px 5px " + $("input[name=vinegar]:checked").attr('data-vinColor'))
+  $("#vinColor").css("box-shadow", "0px 0px 5px 5px " + $("input[name=vinegar]:checked").attr('data-vinColor'))
   $("#vinName").html($("input[name=vinegar]:checked").val())
 }
 
 function oilColorDisplay () {
   $("#oilColor").css("background", $("input[name=oil]:checked").attr('data-oilColor'))
-  $("#oilColor").css("box-shadow", "2px 2px 5px 5px " + $("input[name=oil]:checked").attr('data-oilColor'))
+  $("#oilColor").css("box-shadow", "0px 0px 5px 5px " + $("input[name=oil]:checked").attr('data-oilColor'))
   $("#oilName").html($("input[name=oil]:checked").val())
 }
 
@@ -45,7 +45,7 @@ function aromaticColor (e) {
 }
 
 $(() => {
-  $('#myButton').on('click', generate)
+  $('#generate-btn').on('click', generate)
   $(".vinegar").on("click", vinColorDisplay)
   $('.vinegar').hide()
   $(".oil").on("click", oilColorDisplay)

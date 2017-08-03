@@ -1,5 +1,6 @@
 #logo {
   text-align: center;
+  font-weight: bolder;
 }
 
 #logo-msg {
@@ -9,6 +10,8 @@
 
 #ingredient-form {
   text-align: center;
+  background: #fff;
+  margin: 0 10%;
 }
 
 input {
@@ -17,6 +20,9 @@ input {
 
 #recipeBox {
   font-size: 18px;
+  background: rgb(221, 235, 221);
+  padding: 0 10px;
+  margin: 0 25%;
 }
 
 html {
@@ -25,6 +31,7 @@ html {
 
 #vinContainer {
   float: right;
+  width: 150px;
 }
 
 #vinColor {
@@ -41,6 +48,7 @@ html {
 
 #oilContainer {
   float: right;
+  width: 150px;
 }
 
 #oilColor {
@@ -70,4 +78,16 @@ html {
   float: left;
   font-size: 16px;
   transition: text-shadow 0.2s;
+}
+
+body {
+  background: rgb(151, 190, 142);
+}
+
+#generate-btn {
+  margin-bottom: 15px;
+}
+
+.cursor {
+  cursor: pointer;
 }
