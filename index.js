@@ -4,8 +4,6 @@ function generate (e) {
   e.preventDefault()
   let checkedVinegar = ($("input[name=vinegar]:checked").val())
   let checkedOil = ($("input[name=oil]:checked").val())
-  console.log($("input[name=vinegar]:checked").val())
-  console.log($("input[name=oil]:checked").val())
   let aromaticList = $("input[name=aromatic]")
   let checkedAromatics = []
   let aromaticString = ''
@@ -16,8 +14,6 @@ function generate (e) {
     }
   }
   aromaticString = aromaticString.substring(1)
-  console.log(checkedAromatics);
-  console.log(aromaticString);
   $('#recipeBox').text('First add a teaspoon of Dijon Mustard to the cup of an immersion blender. \
   Next add the ' + checkedVinegar + ' vinegar to the cup.  Add the ' + aromaticString + ' to the ' + checkedVinegar + ' vinegar and mustard. \
   While blending, start very slowly pouring the ' + checkedOil + ' oil into the mixture.  Once a stable emulsion forms, slightly increase the speed of pouring the ' + checkedOil + ' oil.  \
