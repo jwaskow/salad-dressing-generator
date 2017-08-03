@@ -1,11 +1,6 @@
 'use strict';
 
-function buttonClick (e) {
-  e.preventDefault()
-  console.log('hello')
-}
-
-function total (e) {
+function generate (e) {
   e.preventDefault()
   let checkedVinegar = ($("input[name=vinegar]:checked").val())
   let checkedOil = ($("input[name=oil]:checked").val())
@@ -41,10 +36,20 @@ function oilColorDisplay () {
   $("#oilName").html($("input[name=oil]:checked").val())
 }
 
+function aromaticColor (e) {
+  if ($(e.target).prop("checked")) {
+    $("label[for='"+$(this).attr("id")+"']").css("text-shadow", "0 0 3px " + $(e.target).attr('data-aromColor'))
+  } else if (!($(e.target).prop("checked"))) {
+    $("label[for='"+$(this).attr("id")+"']").css("text-shadow", "none")
+  }
+}
+
 $(() => {
-  $('#myButton').on('click', total)
+  $('#myButton').on('click', generate)
   $(".vinegar").on("click", vinColorDisplay)
   $('.vinegar').hide()
   $(".oil").on("click", oilColorDisplay)
   $('.oil').hide()
+  $('.aromatic').on('click', aromaticColor)
+  $('.aromatic').hide()
 })
