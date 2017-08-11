@@ -14,6 +14,10 @@
   margin: 0 10%;
 }
 
+#recipeContainer {
+  margin: 0 12%;
+}
+
 input {
   margin: 0 10px;
 }
@@ -22,7 +26,14 @@ input {
   font-size: 18px;
   background: rgb(221, 235, 221);
   padding: 0 10px;
-  margin: 0 25%;
+  float: right;
+  white-space: pre-wrap;
+}
+
+#ingredientBox {
+  font-size: 18px;
+  background: rgb(221, 235, 221);
+  padding: 0 10px;
 }
 
 html {

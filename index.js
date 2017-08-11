@@ -2,6 +2,7 @@
 
 function generate (e) {
   e.preventDefault()
+  $('#ingredientList').empty()
   let checkedVinegar = ($("input[name=vinegar]:checked").val())
   let checkedOil = ($("input[name=oil]:checked").val())
   let aromaticList = $("input[name=aromatic]")
@@ -9,15 +10,20 @@ function generate (e) {
   let aromaticString = ''
   for (let i = 0; i < aromaticList.length; i++) {
     if (aromaticList[i].checked) {
-      checkedAromatics.push(aromaticList[i].value)
+      checkedAromatics.push(aromaticList.eq(i).data('ingredient'))
       aromaticString += ", "+aromaticList[i].value;
     }
   }
   aromaticString = aromaticString.substring(1)
-  $('#recipeBox').text('First add a teaspoon of Dijon Mustard to the cup of an immersion blender. \
-  Next add the ' + checkedVinegar + ' vinegar to the cup.  Add the ' + aromaticString + ' to the ' + checkedVinegar + ' vinegar and mustard. \
-  While blending, start very slowly pouring the ' + checkedOil + ' oil into the mixture.  Once a stable emulsion forms, slightly increase the speed of pouring the ' + checkedOil + ' oil.  \
-  When all of the oil is blended, season to taste with salt and pepper and mix.  Vinaigrette will hold its emulsion for about 2 weeks.')
+  $('#ingredientList').append("<li>1/4 cup " + checkedVinegar + " vinegar</li>")
+  $('#ingredientList').append("<li>3/4 cup " + checkedOil + " oil</li>")
+  for (let i = 0; i < checkedAromatics.length; i++) {
+    $('#ingredientList').append("<li>" + checkedAromatics[i] + "</li>")
+  }
+  $('#recipeBox').text('1.  Add a teaspoon of Dijon Mustard to the cup of an immersion blender.' + '\n' + '\n' +'\
+2.  Add the ' + checkedVinegar + ' vinegar to the cup.' + '\n' + '\n' +'3.  Add the' + aromaticString + ' to the ' + checkedVinegar + ' vinegar and mustard.' + '\n' + '\n' +'\
+4.  While blending, begin slowly pouring the ' + checkedOil + ' oil into the mixture.  Once a stable emulsion forms, slightly increase the speed of pouring the ' + checkedOil + ' oil.' + '\n' + '\n' +'\
+5.  When all of the oil is blended, season to taste with salt and pepper and mix.  Vinaigrette will hold its emulsion for about 2 weeks.')
 }
 
 function vinColorDisplay () {
