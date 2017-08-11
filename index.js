@@ -3,6 +3,7 @@
 function generate (e) {
   e.preventDefault()
   $('#ingredientList').empty()
+  $('#recipeContainer').show()
   let checkedVinegar = ($("input[name=vinegar]:checked").val())
   let checkedOil = ($("input[name=oil]:checked").val())
   let aromaticList = $("input[name=aromatic]")
@@ -48,6 +49,7 @@ function aromaticColor (e) {
 
 $(() => {
   $('#generate-btn').on('click', generate)
+  $('#recipeContainer').hide()
   $(".vinegar").on("click", vinColorDisplay)
   $('.vinegar').hide()
   $(".oil").on("click", oilColorDisplay)

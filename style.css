@@ -99,6 +99,7 @@ html {
 
 body {
   background: rgb(151, 190, 142);
+  padding-bottom: 15px;
 }
 
 #generate-btn {
@@ -115,4 +116,8 @@ body {
 
 .fieldset {
   height: 150px;
+}
+
+.center {
+  text-align: center;
 }
