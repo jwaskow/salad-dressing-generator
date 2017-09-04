@@ -11,19 +11,30 @@
       <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     </head>
     <body class="container-fluid">
+      <div id="logo-box">
       <h1 id="logo">Salad Dressing Generator</h1>
       <h3 id="logo-msg">Don't fret over your vinaigrette!</h3>
+    </div>
     </br>
 
       <form id="ingredient-form">
+        <div id="landing-page">
+          <h3>Welcome to the salad dressing generator</h3>
+          <p>Simply select which vinegar, oil, and aromatics you have on hand and we'll create a recipe for you!</p>
+          <button id="start-btn">Let's Get Started!</button>
+        </div>
+        <div id="vinaigrette-form">
         <fieldset class="fieldset">
-          <legend>Choose a Vinegar</legend>
+          <h4 class="form-headers">Choose a Vinegar</h4>
+        </br>
+          <div class="input-box">
           <label class="vinLabel cursor"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#ce9c00" value="Apple Cider"> Apple Cider</label>
           <label class="vinLabel cursor"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#250630" value="Balsamic"> Balsamic</label>
           <label class="vinLabel cursor"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#f4e7ab" value="Champagne"> Champagne</label>
           <label class="vinLabel cursor"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#990928" value="Red Wine"> Red Wine</label>
           <label class="vinLabel cursor"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#704a19" value="Sherry"> Sherry</label>
           <label class="vinLabel cursor"><input type="radio" name="vinegar" class="vinegar" data-vinColor="#fffac9" value="White Wine"> White Wine</label>
+          </div>
           <div id="vinContainer">
           <div id="vinColor"></div>
           <div id="vinName"></div>
@@ -31,12 +42,15 @@
         </fieldset>
       </br>
         <fieldset class="fieldset">
-          <legend>Choose an Oil</legend>
+          <h4 class="form-headers">Choose an Oil</h4>
+          </br>
+          <div class="input-box">
           <label class="oilLabel cursor"><input type="radio" name="oil" class="oil" data-oilColor="#f7f5b4" value="Canola"> Canola</label>
           <label class="oilLabel cursor"><input type="radio" name="oil" class="oil" data-oilColor="#97a33c" value="Extra Virgin Olive"> Extra Virgin Olive</label>
           <label class="oilLabel cursor"><input type="radio" name="oil" class="oil" data-oilColor="#c4c44e" value="Olive"> Olive</label>
           <label class="oilLabel cursor"><input type="radio" name="oil" class="oil" data-oilColor="#eae98c" value="Soybean"> Soybean</label>
           <label class="oilLabel cursor"><input type="radio" name="oil" class="oil" data-oilColor="#fcfbc4" value="Vegetable"> Vegetable</label>
+        </div>
           <div id="oilContainer">
           <div id="oilColor"></div>
           <div id="oilName"></div>
@@ -44,7 +58,9 @@
         </fieldset>
         </br>
         <fieldset class="fieldset">
-          <legend>Choose Aromatics (2-4)</legend>
+          <h4 class="form-headers">Choose Aromatics (2-4)</h4>
+          </br>
+          <div class="input-box">
           <label for="shallot" class="aromaticLabel cursor"><input type="checkbox" name="aromatic" class="aromatic" id="shallot" data-aromColor="#e889ff" data-ingredient="1 shallot, chopped" value="shallot"> Shallots</label>
           <label for="garlic" class="aromaticLabel cursor"><input type="checkbox" name="aromatic" class="aromatic" id="garlic" data-aromColor="#e2d87c" data-ingredient="1 clove garlic, minced" value="garlic"> Garlic</label>
           <label for="parsley" class="aromaticLabel cursor"><input type="checkbox" name="aromatic" class="aromatic" id="parsley" data-aromColor="#54a342" data-ingredient="1 Tbsp parsley, chopped" value="parsley"> Parsley</label>
@@ -54,9 +70,11 @@
           <label for="lemon-juice" class="aromaticLabel cursor"><input type="checkbox" name="aromatic" class="aromatic" id="lemon-juice" data-aromColor="#ecf418" data-ingredient="1 tsp lemon juice" value="lemon juice"> Lemon Juice</label>
           <label for="raspberries" class="aromaticLabel cursor"><input type="checkbox" name="aromatic" class="aromatic" id="raspberries" data-aromColor="#dd6167" data-ingredient="5-10 raspberries" value="raspberries"> Raspberries</label>
           <label for="cherries" class="aromaticLabel cursor"><input type="checkbox" name="aromatic" class="aromatic" id="cherries" data-aromColor="#d66297" data-ingredient="4-8 cherries with pits removed" value="cherries"> Cherries</label>
+        </div>
         </fieldset>
         </br>
         <button id="generate-btn" class="btn">Make My Recipe!</button>
+      </div>
       </form>
       </br>
 

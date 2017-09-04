@@ -1,6 +1,7 @@
 #logo {
   text-align: center;
   font-weight: bolder;
+  color: #1B1725;
 }
 
 #logo-msg {
@@ -10,8 +11,18 @@
 
 #ingredient-form {
   text-align: center;
-  background: #fff;
+  background: #edfcf1;
   margin: 0 10%;
+  border-radius: 25px;
+  border: 10px solid #1B1725;
+}
+
+#logo-box {
+  margin: 0 30%;
+  border-radius: 25px;
+  border: 10px solid #1B1725;
+  margin-bottom: -30px;
+  background: #D4F4DD;
 }
 
 #recipeContainer {
@@ -98,7 +109,7 @@ html {
 }
 
 body {
-  background: rgb(151, 190, 142);
+  background: #3C91E6;
   padding-bottom: 15px;
 }
 
@@ -120,4 +131,19 @@ body {
 
 .center {
   text-align: center;
+}
+
+.form-headers {
+  color: #D62246;
+  float: left;
+  clear: both;
+}
+
+.input-box {
+  float: left;
+  clear: both;
+}
+
+#landing-page {
+  padding: 10px 0;
 }

@@ -1,5 +1,11 @@
 'use strict';
 
+function begin (e) {
+  e.preventDefault()
+  $('#landing-page').hide()
+  $('#vinaigrette-form').show()
+}
+
 function generate (e) {
   e.preventDefault()
   $('#ingredientList').empty()
@@ -41,7 +47,7 @@ function oilColorDisplay () {
 
 function aromaticColor (e) {
   if ($(e.target).prop("checked")) {
-    $("label[for='"+$(this).attr("id")+"']").css("text-shadow", "0 0 3px " + $(e.target).attr('data-aromColor'))
+    $("label[for='"+$(this).attr("id")+"']").css("text-shadow", "0 0 5px " + $(e.target).attr('data-aromColor'))
   } else if (!($(e.target).prop("checked"))) {
     $("label[for='"+$(this).attr("id")+"']").css("text-shadow", "none")
   }
@@ -49,6 +55,8 @@ function aromaticColor (e) {
 
 $(() => {
   $('#generate-btn').on('click', generate)
+  $('#vinaigrette-form').hide()
+  $('#start-btn').on('click', begin)
   $('#recipeContainer').hide()
   $(".vinegar").on("click", vinColorDisplay)
   $('.vinegar').hide()
